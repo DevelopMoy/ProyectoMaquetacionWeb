@@ -1,0 +1,463 @@
+@font-face {
+    font-family: Benton;
+    src: url("../fonts/BentonSans.otf") format("opentype");
+}
+
+body{
+    background-color: #F4F4F4;
+}
+
+.clearBoth{
+    float: none;
+    clear: both;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+/* ESTILOS HEADER */
+
+#contenedorGeneral{
+    width: 100%;
+    height: auto;
+}
+
+#mainHeader{
+    background-color: #072146;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#headLogo{
+    flex-grow: 1;
+}
+
+#headLogo img {
+    width: 36%;
+    margin: 7% 0% 7% 54%;
+}
+
+#categHeader{
+    flex-grow: 4;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#categHeader p{
+    color: white;
+    font-family: Benton,sans-serif;
+}
+
+#categHeader p:last-child{
+    margin-left: 4%;
+}
+
+#botones{
+    flex-grow: 4;
+    padding-right: 7%;
+    font-family: Benton,sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#botones a{
+    color: white;
+}
+
+#botones i{
+    color: white;
+}
+
+.colorAmarillo{
+    color: #F8CD51;
+}
+
+#linkAcceso{
+    background-color: #028484;
+    padding: 3% 5% 3% 5%;
+}
+
+/* SLIDESHOW */
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+/* FIN SLIDESHOW */
+
+/* CLIENTES Y USUARIOS */
+#contenedorClientesUsers{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#subSeccClient{
+    margin-top: 2%;
+    width: 80%;
+    background-color: #EAF9FA;
+    height: auto;
+}
+
+#subSeccClient img{
+    float: left;
+    width: 15%;
+    margin-left: 1%;
+}
+
+#subSeccClient #textoClientUser {
+    box-sizing: border-box;
+    font-family: Benton,sans-serif;
+    float: right;
+    width: 84%;
+    padding: 4% 2% 4% 2%;
+}
+
+#subSeccClient #textoClientUser a{
+    color: #4493CB;
+}
+
+#subSeccClient #textoClientUser h3{
+    margin-bottom: 1%;
+}
+
+/* FIN CLIENTES Y USUARIOS */
+/* INICIO CONTENEDOR HOMBRE */
+
+#contenedorSeccHombr{
+    background-color: #072146;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+
+#textoSeccH{
+    flex-grow: 1;
+    flex-basis: 50%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#textoSeccH h3, #textoSeccH a, #textoSeccH p{
+    color: white;
+}
+
+#T2{
+    background-color: #072146;
+    flex-grow: 1;
+    flex-basis: 50%;
+}
+
+#T2 img{
+    width: 100%;
+}
+
+#textoSeccH h3{
+    margin: 9% 0 0 16%;
+}
+
+#textoSeccH p{
+    padding: 2% 0 0 16%;
+}
+
+#textoSeccH a{
+    flex-basis: 10%;
+    width: 10%;
+    text-align: center;
+    margin-left: 16%;
+    margin-top: 5%;
+    padding: 2% 8% 0 8%;
+    background-color: #1D73B2;
+    text-align: center;
+}
+
+/* FIN CONTENEDOR HOMBRE */
+
+/* CONTENEDOR MUJER */
+
+#contenedorMujer{
+    margin: 2% auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#contFotoMuj{
+    flex-grow: 1;
+}
+
+#subContMuj{
+
+    flex-grow: 1;
+}
+
+#valorCasa{
+    margin-left: 4%;
+    font-family: Benton,sans-serif;
+    background-color: white;
+}
+
+#valorCasa img{
+    margin: 8% 0% 7% 0%;
+    float: left;
+}
+
+#valorCasa h3{
+    padding-top: 12%;
+    margin: 1% 14% 2% 32%;
+}
+
+#valorCasa a{
+    padding-top: 12%;
+    margin: 1% 14% 2% 11%;
+    color: #1D73B2;
+}
+
+#valorCasa p{
+    margin: 1% 14% 2% 32%;
+}
+
+.tarjetaMini{
+    box-sizing: border-box;
+    background-color: white;
+    margin-left: 4%;
+    margin-top: 3%;
+    float: left;
+    width: 42%;
+    font-family: Benton, sans-serif;
+    padding: 2%;
+}
+.tarjetaMini i{
+    color: #1D73B2;
+}
+
+.tarjetaMini h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.tarjetaMini p{
+    margin-bottom: 3%;
+}
+
+.tarjetaMini a{
+    margin-bottom: 4%;
+    color: #1D73B2;
+}
+
+.tm2{
+    margin-left: 12%;
+}
+
+.tm2 p{
+    margin-bottom: 10%;
+}
+
+/* FIN CONTENEDOR MUJER */
+
+/* INICIO CONTENEDOR NEWSROOM */
+
+#subtituloNewsRoom{
+    text-align: center;
+    font-family: 'Peddana', serif;
+    font-size: 2.5em;
+    padding: 1% 0 1% 0;
+}
+
+#noticiasBBVA{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.subNoticia img{
+    height: 300px;
+    width: 100%;
+}
+
+.subNoticia{
+    font-family: Benton,sans-serif;
+    box-sizing: border-box;
+    background-color: #F4F4F4;
+    box-shadow: 0 0 5px gray;
+    flex-basis: calc((100%/3) - 6%);
+    margin-left: 2%;
+    flex-grow: 1;
+}
+
+.subNoticia h3 {
+    font-size: 1.5em;
+    padding: 3%;
+}
+
+.subNoticia p{
+    padding: 3%;
+    color: #717171;
+}
+
+.subNoticia i{
+    padding: 4%;
+    color: #1D73B2;
+}
+
+.subNoticia a{
+    padding: 1%;
+    color: #1D73B2;
+}
+
+#linkNotica2{
+    margin-top: 7%;
+}
+
+#linkNotica3{
+    margin-top: 26%;
+}
+
+#barraIrA{
+    width: 100%;
+    padding: 3%;
+    font-size: 1.5em;
+    color: #1D73B2;
+    text-align: center;
+}
+
+#barraIrA i{
+    color: #1D73B2;
+}
+
+#barraIrA span{
+    color: #1D73B2;
+}
+
+#preFooterCont{
+    display: flex;
+    padding:2% 0 5% 0;
+    background-color: white;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: Benton,sans-serif;
+}
+
+.elementPreFoot .imagPF{
+    background-color: #F4F4F4;
+    border-radius: 50%;
+}
+
+.elementPreFoot h3{
+    margin-top: 4%;
+}
+
+.elementPreFoot h5{
+    color: #1D73B2;
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+
+/* FIN CONTENEDOR NEWSROOM */
