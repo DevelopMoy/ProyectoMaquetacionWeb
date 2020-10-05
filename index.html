@@ -6,22 +6,30 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <script src="https://kit.fontawesome.com/6da9f9e367.js" crossorigin="anonymous"></script>
         <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.jpg" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     </head>
 
     <body>
         <div id="contenedorGeneral">
+            <div id="contMusica">
+                <audio src="media/y2mate.com%20-%20The%20Beatles%20-%20A%20Day%20In%20The%20Life.mp3" preload="none" controls>
+                    Tu navegador no soporta el elemento <code>audio</code>.
+                </audio>
+            </div>
+            <button id="botonMusica">Play</button>
             <!-- INICIO HEADER -->
             <header id="mainHeader">
                 <div id="headLogo">
-                    <img src="images/logo_bbva_blanco.svg" alt="logoPrinc">
+                    <a href="index.html"><img src="images/logo_bbva_blanco.svg" alt="logoPrinc"></a>
                 </div>
                 <div id="categHeader">
-                    <p>PERSONAS</p>
-                    <p>EMPRESAS Y GOBIERNO</p>
+                    <a href="tablePage.html"><p>PERSONAS</p></a>
+                    <a href="#" id="catH2"><p>EMPRESAS Y GOBIERNO</p></a>
                 </div>
                 <div id="botones">
                     <span class="colorAmarillo"><i class="fas fa-user-plus" style="color:#F8CD51;" id="bt1"></i></span>
-                    <a href="#"><span class="colorAmarillo">Hazte Cliente</span></a>
+                    <a class="animate__animated animate__headShake" href="formCostumer.html"><span class="colorAmarillo">Hazte Cliente</span></a>
                     <div id="linkAcceso">
                         <a href="#">Acceso</a>
                     </div>
@@ -183,8 +191,38 @@
                 </a>
 
             </div>
-
             <!-- FIN CONTENEDOR PRE FOOTER -->
+            <!-- INICIO FOOTER -->
+            <footer id="footPrinc">
+                <div class="fIzq" id="footLogo">
+                    <img src="images/logo_bbva_blanco.svg">
+                </div>
+                <div class="fDer" id="redSocFoot">
+                    <a href="https://www.facebook.com/bbvaenmexico/?1" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://twitter.com/BBVA_Mex/?1" target="_blank"><i class="fab fa-twitte fa-2xr"></i></a>
+                    <a href="https://www.instagram.com/bbva_mex/?1" target="_blank"><i style="padding-left: 0;" class="fab fa-instagram fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/company/bbva-mexico/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.youtube.com/user/bbvabancomer/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+                <div class="fIzq" id="avisosPrivac">
+                    <div id="avPrivSubCont">
+                        <a href="#">Aviso Legal</a>
+                        <a href="#">Mapa del sitio</a>
+                        <a href="#">Avisos  de privacidad</a>
+                    </div>
+                </div>
+                <p class="fDer" id="costosComic">
+                    <a href="#">Consulta los costos y las comisiones de nuestros productos</a>
+                </p>
+                <p class="fIzq" id="datosLegales">
+                    © 2020 BBVA Bancomer, S. A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer, Avenida Paseo de la Reforma 510, colonia Juárez, código postal 06600, alcaldía Cuauhtémoc, Ciudad de México.
+                </p>
+                <p class="fDer" id="sloganFoot">
+                    Creando Oportunidades
+                </p>
+            </footer>
+            <!-- FIN FOOTER -->
+
 
         </div>
 
@@ -219,7 +257,24 @@
                 dots[slideIndex-1].className += " active";
             }
         </script>
-    </body>
 
+        <script>
+            var boton = document.getElementById("botonMusica");
+            var v = document.getElementsByTagName("audio")[0];
+            var sound = false;
+
+            boton.addEventListener("click", function(){
+                if (!sound) {
+                    v.play();
+                    this.innerHTML = "Pause";
+                    sound = true;
+                } else {
+                    v.pause();
+                    this.innerHTML = "Play";
+                    sound = false;
+                }
+            });
+        </script>
+    </body>
 
 </html>

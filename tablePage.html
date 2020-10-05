@@ -1,0 +1,272 @@
+<html>
+<head>
+    <title>Bienvenidos a la Banca en Línea | BBVA México</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesTable.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src="https://kit.fontawesome.com/6da9f9e367.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.jpg" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+<div id="contenedorGeneral">
+
+    <!-- INICIO HEADER -->
+    <header id="mainHeader">
+        <div id="headLogo">
+            <a href="index.html"><img src="images/logo_bbva_blanco.svg" alt="logoPrinc"></a>
+        </div>
+        <div id="categHeader">
+            <a href="#"><p>PERSONAS</p></a>
+            <a href="#" id="catH2"><p>EMPRESAS Y GOBIERNO</p></a>
+        </div>
+        <div id="botones">
+            <span class="colorAmarillo"><i class="fas fa-user-plus" style="color:#F8CD51;" id="bt1"></i></span>
+            <a href="formCostumer.html"><span class="colorAmarillo">Hazte Cliente</span></a>
+            <div id="linkAcceso">
+                <a href="#">Acceso</a>
+            </div>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#">Menú</a>
+            <a href="#"><i class="fas fa-stream"></i></a>
+        </div>
+    </header>
+    <!-- FIN HEADER -->
+
+    <!-- CONTENEDOR FORMULARIO -->
+    <div id="formularioCliente">
+        <h3>Ingreso a Plataforma BBVA Personas Fisicas</h3>
+        <form method="post" target="#">
+            <label for="nombreForm">ID o Usuario</label>
+            <input class="inputTextNumb" type="text" id="nombreForm">
+            <label for="passForm">Contraseña</label>
+            <input type="password" id="passForm">
+            <div id="contenedorCheckBox">
+                <input type="checkbox" id="checkF">
+                <label for="checkF">Recordar Contraseña</label>
+            </div>
+            <input type="submit">
+        </form>
+    </div>
+
+    <!-- FIN CONTENEDOR FORMULARIO -->
+
+    <!-- INICIO TABLA -->
+    <h3 class="subtTable">Información financiera al día</h3>
+    <div id="contenedorTabla">
+        <table>
+            <tr class="fila1">
+                <th colspan="2">Compra</th>
+                <th>Venta</th>
+            </tr>
+            <tr>
+                <td>Dolar</td>
+                <td>$ 21.00	</td>
+                <td>$ 21.88	</td>
+            </tr>
+            <tr>
+                <td>Euro</td>
+                <td>$ 23.84	</td>
+                <td>$ 25.81	</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Centenario</td>
+                <td>$ 47,250.00	</td>
+                <td>$ 52,750.00</td>
+            </tr>
+            <tr>
+                <td>$ 43,750.00	</td>
+                <td>$ 47,350.00	</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- FIN TABLA -->
+    <h3 class="subtTable">Gracias por pertenecer a BBVA</h3>
+    <div class="img-comp-container">
+        <div class="img-comp-img">
+            <img src="images/mujer.jpg" width="300" height="200">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+            <img src="images/hombre.jpg" width="300" height="200">
+        </div>
+    </div>
+    <div class="progress-container">
+        <div class="progress"></div>
+    </div>
+
+    <div id="barraIrA">
+        <a href="#contenedorGeneral">
+            <i class="fas fa-home"></i>
+            <span>Volver a inicio</span>
+        </a>
+    </div>
+    <div id="preFooterCont">
+        <a href="#">
+            <div class="elementPreFoot">
+                <div class="imagPF">
+                    <img src="images/preFoot1.png">
+                </div>
+                <h3>Sucursales y Cajeros</h3>
+                <h5>Siempre cerca de tí</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="elementPreFoot">
+                <div class="imagPF">
+                    <img src="images/preFoot2.png">
+                </div>
+                <h3>Atención al cliente</h3>
+                <h5>Contacta con nosotros</h5>
+            </div>
+        </a>
+
+        <a href="#">
+            <div class="elementPreFoot">
+                <div class="imagPF">
+                    <img src="images/preFoot3.png">
+                </div>
+                <h3>Aplicaciones Moviles</h3>
+                <h5>Contigo donde sea</h5>
+            </div>
+        </a>
+
+    </div>
+    <!-- FIN CONTENEDOR PRE FOOTER -->
+    <!-- INICIO FOOTER -->
+    <footer id="footPrinc">
+        <div class="fIzq" id="footLogo">
+            <img src="images/logo_bbva_blanco.svg">
+        </div>
+        <div class="fDer" id="redSocFoot">
+            <a href="https://www.facebook.com/bbvaenmexico/?1" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/BBVA_Mex/?1" target="_blank"><i class="fab fa-twitte fa-2xr"></i></a>
+            <a href="https://www.instagram.com/bbva_mex/?1" target="_blank"><i style="padding-left: 0;" class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/company/bbva-mexico/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+            <a href="https://www.youtube.com/user/bbvabancomer/" target="_blank"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <div class="fIzq" id="avisosPrivac">
+            <div id="avPrivSubCont">
+                <a href="#">Aviso Legal</a>
+                <a href="#">Mapa del sitio</a>
+                <a href="#">Avisos  de privacidad</a>
+            </div>
+        </div>
+        <p class="fDer" id="costosComic">
+            <a href="#">Consulta los costos y las comisiones de nuestros productos</a>
+        </p>
+        <p class="fIzq" id="datosLegales">
+            © 2020 BBVA Bancomer, S. A., Institución de Banca Múltiple, Grupo Financiero BBVA Bancomer, Avenida Paseo de la Reforma 510, colonia Juárez, código postal 06600, alcaldía Cuauhtémoc, Ciudad de México.
+        </p>
+        <p class="fDer" id="sloganFoot">
+            Creando Oportunidades
+        </p>
+    </footer>
+    <!-- FIN FOOTER -->
+
+
+</div>
+    <script>
+        initComparisons();
+        function initComparisons() {
+            var x, i;
+            /* Find all elements with an "overlay" class: */
+            x = document.getElementsByClassName("img-comp-overlay");
+            for (i = 0; i < x.length; i++) {
+                /* Once for each "overlay" element:
+                pass the "overlay" element as a parameter when executing the compareImages function: */
+                compareImages(x[i]);
+            }
+            function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                /* Get the width and height of the img element */
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                /* Set the width of the img element to 50%: */
+                img.style.width = (w / 2) + "px";
+                /* Create slider: */
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                /* Insert slider */
+                img.parentElement.insertBefore(slider, img);
+                /* Position the slider in the middle: */
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                /* Execute a function when the mouse button is pressed: */
+                slider.addEventListener("mousedown", slideReady);
+                /* And another function when the mouse button is released: */
+                window.addEventListener("mouseup", slideFinish);
+                /* Or touched (for touch screens: */
+                slider.addEventListener("touchstart", slideReady);
+                /* And released (for touch screens: */
+                window.addEventListener("touchend", slideFinish);
+                function slideReady(e) {
+                    /* Prevent any other actions that may occur when moving over the image: */
+                    e.preventDefault();
+                    /* The slider is now clicked and ready to move: */
+                    clicked = 1;
+                    /* Execute a function when the slider is moved: */
+                    window.addEventListener("mousemove", slideMove);
+                    window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                    /* The slider is no longer clicked: */
+                    clicked = 0;
+                }
+                function slideMove(e) {
+                    var pos;
+                    /* If the slider is no longer clicked, exit this function: */
+                    if (clicked == 0) return false;
+                    /* Get the cursor's x position: */
+                    pos = getCursorPos(e)
+                    /* Prevent the slider from being positioned outside the image: */
+                    if (pos < 0) pos = 0;
+                    if (pos > w) pos = w;
+                    /* Execute a function that will resize the overlay image according to the cursor: */
+                    slide(pos);
+                }
+                function getCursorPos(e) {
+                    var a, x = 0;
+                    e = e || window.event;
+                    /* Get the x positions of the image: */
+                    a = img.getBoundingClientRect();
+                    /* Calculate the cursor's x coordinate, relative to the image: */
+                    x = e.pageX - a.left;
+                    /* Consider any page scrolling: */
+                    x = x - window.pageXOffset;
+                    return x;
+                }
+                function slide(x) {
+                    /* Resize the image: */
+                    img.style.width = x + "px";
+                    /* Position the slider: */
+                    slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+            }
+        }
+    </script>
+
+    <script>
+        const progressbar = document.querySelector(".progress");
+
+        const changeProgress = (progress) => {
+            progressbar.style.width = `${progress}%`;
+        };
+
+        /* change progress after 1 second (only for showcase) */
+        setTimeout(() => changeProgress(22), 1000);
+        setTimeout(() => changeProgress(45), 2000);
+        setTimeout(() => changeProgress(85), 4600);
+        setTimeout(() => changeProgress(98), 5266);
+        setTimeout(() => changeProgress(100), 8000);
+
+    </script>
+
+</body>
+
+</html>
